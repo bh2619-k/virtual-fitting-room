@@ -31,36 +31,34 @@ This is a Flask-based API application that enables users to perform a virtual tr
 
 1. Clone the Repository:
    ```bash
-   git clone <https://github.com/dagaca/virtual-try-on.git>
+   git clone <https://github.com/bh2619-k/virtual-fitting-room.git>
    cd <virtual-try-on>
    ```
-   
 2. Create and Activate a Virtual Environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
-   
 3. Install the Dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-   
 4. Set Up Configuration:
    - Create a .env file in the root directory and configure your environment variables as needed.
    - Example:
-       - RESULT_FOLDER=results
-       - TEMP_FOLDER=temp
-       - LOG_DIR=logs
-       - LOG_FILE=app.log
+     - RESULT_FOLDER=results
+     - TEMP_FOLDER=temp
+     - LOG_DIR=logs
+     - LOG_FILE=app.log
 
 5. Run the Application:
+
    ```bash
    flask run
 
    The application will start running on http://127.0.0.1:5000/.
    ```
-   
+
 ## Usage
 
 - Use a tool like Postman or curl to interact with the API endpoints.
@@ -95,7 +93,7 @@ This is a Flask-based API application that enables users to perform a virtual tr
 
 ## Virtual Try-On Experiments
 
-This project involves conducting various professional virtual try-on experiments using my own photos and different garment images. For this project, I used two personal photos and experimented with six different garment images. 
+This project involves conducting various professional virtual try-on experiments using my own photos and different garment images. For this project, I used two personal photos and experimented with six different garment images.
 
 ### Input Photos and Garments
 
@@ -110,10 +108,6 @@ The following image illustrates the results of these virtual try-on experiments.
 ![Virtual Try-On Results](images/virtual-tryon-results.png)
 
 All detailed results of these experiments are stored and can be accessed in the `results` folder. The results folder contains all the individual outcomes of the combinations tested during the experiments.
-
-## Acknowledgments
-
-This application uses the Kolors Virtual Try-On API provided by the Kwai team, available on Hugging Face Spaces. You can find more information and access the API here: [Kolors Virtual Try-On](https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On).
 
 ## Logging
 
